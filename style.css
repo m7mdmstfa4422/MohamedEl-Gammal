@@ -35,6 +35,102 @@
   z-index: 1000;
 }
 
+.aclass {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  background-color: #070707;
+  color: #1670f0;
+  margin-left: 100px;
+  font-style: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  padding-top: 600px;
+}
+
+.aChild1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: anumate1 2s linear infinite;
+}
+
+@keyframes anumate1 {
+  0% {
+    transform: translateX(-100%)
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes anumate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes anumate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes anumate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.aChild2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  animation: anumate2 2s linear infinite;
+
+}
+
+.aChild3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: anumate3 2s linear infinite;
+
+}
+
+.aChild4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: anumate4 2s linear infinite;
+
+}
+
 .navbar a {
   text-decoration: none;
   color: #fff;
@@ -140,8 +236,8 @@ section {
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
     url(img/7alp.jpg) no-repeat 50% 50% / cover;
-    
-    
+
+
 }
 
 .swiper-slide--two {
@@ -177,6 +273,7 @@ footer {
   padding-top: 40px;
   margin-top: 50px;
   height: 200px;
+
 }
 
 .wrapper {
@@ -274,7 +371,14 @@ a {
   text-decoration: none;
 }
 
-video{
+video {
   height: 100px;
   width: 150px;
+}
+
+@media (min-width :0px) and (max-width :350px){
+  .loogoo{
+    width: 100px;
+    height: 100px;
+  }
 }
